@@ -4,7 +4,7 @@ import zoneinfo
 import requests
 
 now = datetime.datetime.now(zoneinfo.ZoneInfo("America/Los_Angeles"))
-if now.hour != 17:
+if not (17 <= now.hour < 18):
     print(f"Not 5PM Pacific (current hour: {now.hour}), skipping.")
     exit()
 

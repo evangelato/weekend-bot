@@ -2,7 +2,8 @@ name: Post Weekend GIF
 
 on:
   schedule:
-    - cron: "0 1 * * 6"  # Every Friday at 5PM PST (1AM UTC Saturday)
+    - cron: "0 0 * * 6"  # Fridays midnight UTC (5PM PDT, summer)
+    - cron: "0 1 * * 6"  # Fridays 1AM UTC (5PM PST, winter)
 
 jobs:
   post:
